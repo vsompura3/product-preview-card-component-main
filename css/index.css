@@ -164,7 +164,8 @@ select {
     color: var(--text-2);
     font-family: var(--ff-serif);
     margin-top: var(--space-xs);
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
   }
 
   & p {
