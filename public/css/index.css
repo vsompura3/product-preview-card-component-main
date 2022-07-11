@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 :root {
-  --hue:158;
-  --saturation:36%;
-  --lightness:37%;
+  --hue: 158;
+  --saturation: 36%;
+  --lightness: 37%;
   --brand: hsl(var(--hue) var(--saturation) var(--lightness));
-  --surface-1: hsl(0  0%  100%);
-  --surface-2: hsl(30  38%  92%);
-  --text-1: hsl(228  12%  48%);
-  --text-2: hsl(212  21%  14%);
+  --surface-1: hsl(0 0% 100%);
+  --surface-2: hsl(30 38% 92%);
+  --text-1: hsl(228 12% 48%);
+  --text-2: hsl(212 21% 14%);
 
   --space-xxs: 0.25rem;
   --space-xs: 0.75rem;
@@ -132,15 +132,14 @@ select {
 }
 
 .card {
-  --max-size: 45ch
-  max-inline-size: var(--max-size, 600px);
-  max-width: var(--max-size, 600px);
+  --max-size: 40ch;
+  max-inline-size: var(--max-size);
   border-radius: 0.75ch;
   overflow: auto;
   display: grid;
   color: var(--text-1);
   background: var(--surface-1);
-  box-shadow: 0 2px 2px hsl(212, 21%, 14% / .25);
+  box-shadow: 0 2px 2px hsl(212, 21%, 14% / 0.25);
 
   @media (width > 640px) {
     --max-size: 65ch;
@@ -165,7 +164,7 @@ select {
     color: var(--text-2);
     font-family: var(--ff-serif);
     margin-top: var(--space-xs);
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   & p {
@@ -212,23 +211,23 @@ select {
     align-items: center;
     gap: 1.5ch;
 
-    & span{
+    & span {
       inline-size: 1.5rem;
       block-size: 1.5rem;
       display: grid;
       place-content: center;
     }
 
-    &:hover{
-      background:hsl(var(--hue) var(--saturation) 22%);
+    &:hover {
+      background: hsl(var(--hue) var(--saturation) 22%);
     }
   }
 }
 
-.attribution{
+.attribution {
   text-align: center;
 
-  & a{
+  & a {
     color: var(--brand);
   }
 }
